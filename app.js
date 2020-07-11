@@ -19,7 +19,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
-    dbName: "lms_conv"
+    dbName: "devforum"
   })
   .then(() => {
     console.log("DB CONNECTED");
