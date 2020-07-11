@@ -2,7 +2,7 @@ const Question = require("../models/question");
 const Answer = require("../models/answer");
 
 exports.getQuestionById = (req, res, next, id) => {
-	Question.findById(id).exec((err, ques) => {
+	Question.findById(id).populate("user_id", "_id name").populate("category", "_id name").exec((err, ques) => {
 		if (err) {
 			return res.status(400).json({
 				error: "Question not found!",
