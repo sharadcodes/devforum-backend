@@ -3,7 +3,6 @@
     <p>
         <b>Backend for https://devforum-sharad.netlify.app</b>
     </p>
-    <img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" width="250">
     <img src="https://forthebadge.com/images/badges/built-with-love.svg" width="135">
     <img src="https://forthebadge.com/images/badges/made-with-javascript.svg" width="200">
 
