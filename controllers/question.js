@@ -33,7 +33,7 @@ exports.getQuestion = (req, res) => {
 exports.getAllQuestions = (req, res) => {
 	Question.find()
 		.populate("user_id", "_id name")
-		.populate({ path: "answers._id", "_id name", model: 'Answer' })
+		.populate("answers._id", "_id name")
 		.populate("category", "_id name")
 		.exec((err, question) => {
 			if (err) {
